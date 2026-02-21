@@ -5,6 +5,7 @@ import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddin
 
 import { PineconeStore } from '@langchain/pinecone';
 import { Pinecone as PineconeClient } from '@pinecone-database/pinecone';
+import "./config.js" // env 
  
 //*note
  // api key will automatically retrive from env file , u dont need to pass it manually everywhere
