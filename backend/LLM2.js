@@ -7,9 +7,6 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 export async function chat(userMessage) {
   
 
-  
-    
-
     //* retrieval
     const relevantChunks = await vectorStore.similaritySearch(userMessage, 5);
     const context = relevantChunks
@@ -20,7 +17,7 @@ export async function chat(userMessage) {
     const SYSTEM_PROMPT = [
       {
           role:"system",
-          content:`You are a strict company policy assistant.
+          content:`You are a strict company policy assistant chatBot.
 
           Rules:
           1. Answer ONLY from the provided context.
